@@ -28,11 +28,11 @@ jobs:
 
       - name: Move built files to root
         run: |
-          mv dist/portfolio-v2/browser/* .
-          rm -rf dist/portfolio-v2/browser
+          mv dist/portfolio-v2/* .
+          rm -rf dist/portfolio-v2
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/portfolio-v2
+          publish_dir: ./
