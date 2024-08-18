@@ -28,10 +28,8 @@ jobs:
 
       - name: Move built files to root
         run: |
-          mkdir temp-deploy
-          mv dist/portfolio-v2/browser/* temp-deploy/
-          mv temp-deploy/* .
-          rm -rf temp-deploy
+          mv dist/portfolio-v2/browser/* .
+          rm -rf dist/portfolio-v2
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
