@@ -26,13 +26,8 @@ jobs:
       - name: Build the project
         run: npm run build -- --configuration=production
 
-      - name: Move built files to root
-        run: |
-          mv dist/portfolio-v2/* .
-          rm -rf dist/portfolio-v2
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./dist/portfolio-v2/browser
