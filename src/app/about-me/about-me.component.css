@@ -20,7 +20,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #5E3BEE;
   z-index: 1;
   clip-path: polygon(50% 0%, 100% 0, 100% 100%, 0% 100%);
 }
