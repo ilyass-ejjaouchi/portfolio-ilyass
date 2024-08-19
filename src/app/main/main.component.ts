@@ -7,20 +7,22 @@ import {FooterComponent} from "../footer/footer.component";
 import {IntroComponent} from "../intro/intro.component";
 import {NavbarComponent} from "../navbar/navbar.component";
 import {PortfolioComponent} from "../portfolio/portfolio.component";
+import {CollaboratorsComponent} from "../collaborators/collaborators.component";
 
 @Component({
   selector: 'app-main',
   standalone: true,
-    imports: [
-        AboutMeComponent,
-        ClientFeedbackComponent,
-        ContactFormComponent,
-        ExpertiseComponent,
-        FooterComponent,
-        IntroComponent,
-        NavbarComponent,
-        PortfolioComponent
-    ],
+  imports: [
+    AboutMeComponent,
+    ClientFeedbackComponent,
+    ContactFormComponent,
+    ExpertiseComponent,
+    FooterComponent,
+    IntroComponent,
+    NavbarComponent,
+    PortfolioComponent,
+    CollaboratorsComponent
+  ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })

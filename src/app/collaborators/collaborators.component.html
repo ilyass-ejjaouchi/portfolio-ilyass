@@ -1,11 +1,11 @@
 <div class="container-fluid py-5 bg-light">
   <div class="text-center mb-5">
-    <p class="h6">Clients Feedback</p>
-    <h2 class="display-4">Customer Testimonials</h2>
+    <p class="h6">Collaborators Feedback</p>
+    <h2 class="display-4">Team Testimonials</h2>
   </div>
 
   <!-- Testimonials Multi-Item Carousel -->
-  <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div id="collaboratorsCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item" *ngFor="let group of groupedTestimonials; let i = index" [ngClass]="{'active': i === 0}">
         <div class="row">
@@ -20,7 +20,7 @@
               <button *ngIf="testimonial.text.length > 100" (click)="toggleExpansion(testimonial)" class="btn btn-link p-0 see-more">
                 {{ testimonial.expanded ? 'See Less' : 'See More' }}
               </button>
-              <a class="d-flex align-items-center mt-4 link-review" href="https://www.fiverr.com/ilyassejj?public_mode=true" target="_blank">
+              <a class="d-flex align-items-center mt-4 link-review" href="https://www.linkedin.com/in/ilyass-ejjaouchi/details/recommendations/?detailScreenTabIndex=0" target="_blank">
                 <img [src]="testimonial.image" alt="{{ testimonial.client }}" class="rounded-circle me-3" width="50" height="50">
                 <div>
                   <h5 class="mb-0">{{ testimonial.client }}</h5>
@@ -32,11 +32,11 @@
         </div>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#collaboratorsCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#collaboratorsCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>

@@ -5,14 +5,14 @@ import {testimonials} from "./data";
 declare let window: any;
 
 @Component({
-  selector: 'app-client-feedback',
+  selector: 'app-collaborators',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './client-feedback.component.html',
-  styleUrls: ['./client-feedback.component.css']
+  templateUrl: './collaborators.component.html',
+  styleUrls: ['./collaborators.component.css']
 })
 
-export class ClientFeedbackComponent implements AfterViewInit {
+export class CollaboratorsComponent implements AfterViewInit {
 
 
   groupedTestimonials: any[] = [];

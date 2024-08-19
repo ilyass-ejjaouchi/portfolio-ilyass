@@ -27,13 +27,13 @@
 
 .testimonial-card {
   background: #ffffff;
-  border-color: #4e2edb !important;
+  border-color: #006B6A !important;
   text-align: center;
   width: 100%;
 }
 
 .stars span {
-  color: #4e2edb;
+  color: #006B6A;
   font-size: 1.2rem; /* Adjusted font size */
 }
 
@@ -63,7 +63,7 @@
 }
 
 .see-more {
-  color: #4e2edb;
+  color: #006B6A;
   font-size: 14px;
 }
 

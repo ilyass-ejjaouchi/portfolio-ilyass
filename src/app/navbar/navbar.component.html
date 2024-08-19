@@ -26,6 +26,10 @@
            (click)="scrollToSection('client-feedback')"
            [ngClass]="{'active': currentSection === 'client-feedback'}"
            class="menu-item">Clients Feedback</a>
+        <a routerLink="/" fragment="collaborators"
+           (click)="scrollToSection('collaborators')"
+           [ngClass]="{'active': currentSection === 'collaborators'}"
+           class="menu-item">Collaborators Feedback</a>
       </nav>
     </div>
 
@@ -61,6 +65,10 @@
          (click)="scrollToSection('client-feedback')"
          [ngClass]="{'active': currentSection === 'client-feedback'}"
          class="menu-item">Clients Feedback</a>
+      <a routerLink="/" fragment="collaborators"
+         (click)="scrollToSection('collaborators')"
+         [ngClass]="{'active': currentSection === 'collaborators'}"
+         class="menu-item">Collaborators Feedback</a>
     </nav>
     <button class="btn btn-outline-primary contact-button w-100 mt-3">Contact Me</button>
   </div>
