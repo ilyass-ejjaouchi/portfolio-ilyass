@@ -26,11 +26,11 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm run build -- --configuration production --output-path=dist/portfolio-ilyass --base-href="/portfolio-ilyass/"
+        run: npm run build -- --configuration production --output-path=dist/portfolio-ilyass/browser --base-href="/portfolio-ilyass/"
 
       - name: Ensure `index.html` exists
         run: |
-          if [ ! -f dist/portfolio-ilyass/index.html ]; then
+          if [ ! -f dist/portfolio-ilyass/browser/index.html ]; then
             echo "Error: index.html not found!"
             exit 1
           fi
