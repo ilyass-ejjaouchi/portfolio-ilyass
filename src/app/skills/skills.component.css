@@ -2,6 +2,7 @@
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
 }
 
 .skills-header {
@@ -19,7 +20,8 @@
   margin-bottom: 2rem;
 }
 
-.skills-table th, .skills-table td {
+.skills-table th,
+.skills-table td {
   padding: 1rem;
   border: 1px solid #ddd;
   vertical-align: top;
@@ -45,26 +47,46 @@
   font-size: 1.5rem;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
-  .skills-table, .skills-table thead, .skills-table tbody, .skills-table th, .skills-table td, .skills-table tr {
+  .skills-table {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .skills-table thead {
+    display: none;
+  }
+
+  .skills-table tbody {
     display: block;
     width: 100%;
   }
 
   .skills-table tr {
+    display: block;
     margin-bottom: 1rem;
-  }
-
-  .skills-table th {
-    background-color: transparent;
-    color: #333;
-    font-size: 1.1rem;
-    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
   }
 
   .skills-table td {
+    display: flex;
+    flex-direction: column;
     border: none;
-    padding: 0.5rem 0;
-    text-align: center;
+    padding: 0.5rem;
+  }
+
+  .skills-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  .skill-item {
+    font-size: 1rem;
   }
 }

@@ -14,27 +14,27 @@
     </thead>
     <tbody>
     <tr>
-      <td>
+      <td data-label="Databases">
         <div class="skill-item" *ngFor="let db of skills.databases">
           <fa-icon [icon]="db.icon"></fa-icon> {{ db.name }}
         </div>
       </td>
-      <td>
+      <td data-label="Programming Languages">
         <div class="skill-item" *ngFor="let lang of skills.programmingLanguages">
           <fa-icon [icon]="lang.icon"></fa-icon> {{ lang.name }}
         </div>
       </td>
-      <td>
+      <td data-label="Continuous Integration">
         <div class="skill-item" *ngFor="let ci of skills.continuousIntegration">
           <fa-icon [icon]="ci.icon"></fa-icon> {{ ci.name }}
         </div>
       </td>
-      <td>
+      <td data-label="Web Development">
         <div class="skill-item" *ngFor="let webDev of skills.webDevelopment">
           <fa-icon [icon]="webDev.icon"></fa-icon> {{ webDev.name }}
         </div>
       </td>
-      <td>
+      <td data-label="Languages">
         <div class="skill-item">
           <fa-icon [icon]="skills.languages.french.icon"></fa-icon> French: {{ skills.languages.french.level }}
         </div>
@@ -42,7 +42,7 @@
           <fa-icon [icon]="skills.languages.english.icon"></fa-icon> English: {{ skills.languages.english.level }}
         </div>
       </td>
-      <td>
+      <td data-label="Soft Skills">
         <div class="skill-item" *ngFor="let softSkill of skills.softSkills">
           <fa-icon [icon]="softSkill.icon"></fa-icon> {{ softSkill.name }}
         </div>
