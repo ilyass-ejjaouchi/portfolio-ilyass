@@ -95,33 +95,3 @@
   right: 0;
   background: #1c1e53;
 }
-
-@media (max-width: 576px) {
-  .testimonial-card {
-    padding: 10px; /* Reduced padding for smaller screens */
-  }
-
-  .testimonial-card img {
-    width: 40px;
-    height: 40px;
-  }
-
-  .display-4 {
-    font-size: 28px; /* Adjusted heading size for mobile */
-  }
-
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 10%; /* Increase control width on mobile */
-  }
-
-  .carousel-inner {
-    justify-content: center; /* Center the testimonial card on smaller screens */
-  }
-}
-
-@media (min-width: 768px) {
-  .carousel-inner {
-    justify-content: start; /* Align to the start when there are multiple testimonials */
-  }
-}

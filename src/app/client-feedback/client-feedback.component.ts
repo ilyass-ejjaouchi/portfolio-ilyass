@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectorRef, Component } from '@angular/core';
+import {AfterViewInit, ChangeDetectorRef, Component, HostListener} from '@angular/core';
 import { CommonModule } from "@angular/common";
 
 @Component({
@@ -115,12 +115,30 @@ export class ClientFeedbackComponent implements AfterViewInit {
       expanded: false
     }
   ];
+  groupedTestimonials: any[] = [];
 
-  constructor(private cdr: ChangeDetectorRef) {}
+  constructor(private cdr: ChangeDetectorRef) {
+    this.groupTestimonials();
+  }
 
   ngAfterViewInit() {
     // Trigger change detection to ensure that carousel items are correctly rendered
     this.cdr.detectChanges();
+  }
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.groupTestimonials();
+  }
+
+  groupTestimonials() {
+    this.groupedTestimonials = []; // Reset grouped testimonials
+    const screenWidth = window.innerWidth;
+    const groupSize = screenWidth < 576 ? 1 : 3; // 1 item for small screens, 3 for others
+
+    for (let i = 0; i < this.testimonials.length; i += groupSize) {
+      this.groupedTestimonials.push(this.testimonials.slice(i, i + groupSize));
+    }
   }
 
   toggleExpansion(testimonial: any) {
