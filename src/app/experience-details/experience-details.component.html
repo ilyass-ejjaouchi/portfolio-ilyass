@@ -8,21 +8,18 @@
 
   <!-- Title Section -->
   <div class="mb-5">
-    <h2 class="display-4">{{ projectTitle }}</h2>
-    <div class="experience-image mt-3">
-      <img [src]="projectImage" alt="{{ projectTitle }}" class="img-fluid rounded">
-    </div>
-  </div>
-
-  <div class="row g-4">
-    <div class="col-12">
-      <div class="experience-details shadow-sm p-4">
+    <div class="d-flex flex-column flex-lg-row align-items-start">
+      <div class="flex-grow-1">
+        <h2 class="display-6">{{ projectTitle }}</h2>
         <p class="text-muted">{{ company }}, {{ location }}</p>
         <p class="mb-2"><strong>Duration:</strong> {{ duration }}</p>
         <p><strong>Description:</strong></p>
         <ul>
           <li *ngFor="let detail of projectDetails">{{ detail }}</li>
         </ul>
+      </div>
+      <div class="experience-image ms-lg-4 mt-4 mt-lg-0">
+        <img [src]="projectImage" alt="{{ projectTitle }}" class="img-fluid rounded">
       </div>
     </div>
   </div>

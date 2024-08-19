@@ -29,7 +29,13 @@
     font-size: 36px;
     line-height: 45px;
   }
+
+  .d-flex.flex-column.flex-lg-row .experience-image {
+    order: -1; /* Move the image above text on smaller screens */
+    margin-bottom: 20px; /* Adjust the spacing below the image */
+  }
 }
+
 .btn-back {
   background-color: #1C1E53;
   color: white;

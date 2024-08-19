@@ -1,5 +1,5 @@
-<div class="container-fluid mynavbar" >
-  <div class="row align-items-center">
+<div class="container-fluid mynavbar">
+  <div class="row align-items-center justify-content-between">
     <!-- Logo Section -->
     <div class="col-auto">
       <div class="logo">
@@ -8,20 +8,36 @@
     </div>
 
     <!-- Centered Menu -->
-    <div class="col text-center">
+    <div class="col text-center d-none d-md-block">
       <nav class="menu d-inline-flex align-items-center gap-4">
-        <a href="#" class="menu-item active">Home</a>
-        <a href="#" class="menu-item">Portfolio</a>
-        <a href="#" class="menu-item">About me</a>
-        <a href="#" class="menu-item">Clients Feedback</a>
+        <a routerLink="/" fragment="intro" (click)="scrollToSection('intro')" class="menu-item active">Home</a>
+        <a routerLink="/" fragment="portfolio" (click)="scrollToSection('portfolio')" class="menu-item">Portfolio</a>
+        <a routerLink="/" fragment="about-me" (click)="scrollToSection('about-me')" class="menu-item">About me</a>
+        <a routerLink="/" fragment="client-feedback" (click)="scrollToSection('client-feedback')" class="menu-item">Clients Feedback</a>
       </nav>
     </div>
 
-    <!-- Contact Button -->
-    <div class="col-auto">
-      <div class="d-flex justify-content-end">
-        <button class="btn btn-outline-primary contact-button">Contact Me</button>
-      </div>
+    <!-- Contact Button (visible on larger screens) -->
+    <div class="col-auto d-none d-md-block">
+      <button class="btn btn-outline-primary contact-button">Contact Me</button>
     </div>
+
+    <!-- Hamburger Menu for Mobile (visible on small screens) -->
+    <div class="col-auto d-md-none">
+      <button (click)="toggleMenu()" class="menu-toggle">
+        ☰
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div [ngClass]="{'active': isMenuOpen, 'd-none': !isMenuOpen}" class="mobile-menu d-md-none">
+    <nav class="menu d-flex flex-column align-items-center">
+      <a routerLink="/" fragment="intro" class="menu-item active">Home</a>
+      <a routerLink="/" fragment="portfolio" class="menu-item">Portfolio</a>
+      <a routerLink="/" fragment="about-me" class="menu-item">About me</a>
+      <a routerLink="/" fragment="client-feedback" class="menu-item">Clients Feedback</a>
+    </nav>
+    <button class="btn btn-outline-primary contact-button w-100 mt-3">Contact Me</button>
   </div>
 </div>
