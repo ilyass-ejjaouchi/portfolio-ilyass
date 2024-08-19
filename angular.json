@@ -54,7 +54,7 @@
                 }
               ],
               "outputHashing": "all",
-              "outputPath": "dist/portfolio-v2/browser"
+              "outputPath": "dist/portfolio-ilyass/"
             },
             "development": {
               "optimization": false,
