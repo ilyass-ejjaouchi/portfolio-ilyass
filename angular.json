@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portfolio-v2/browser",
+            "outputPath": "dist/portfolio-ilyass/",
             "baseHref": "/portfolio-ilyass/",
             "index": "src/index.html",
             "browser": "src/main.ts",

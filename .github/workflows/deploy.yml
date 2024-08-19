@@ -4,8 +4,10 @@ on:
   push:
     branches:
       - main
+
 permissions:
   contents: write
+
 jobs:
   build:
     name: Build
@@ -24,15 +26,23 @@ jobs:
         run: npm install
 
       - name: Build the project
-        run: npm run build -- --configuration=production
+        run: npm run build -- --configuration production --output-path=dist/portfolio-ilyass --base-href="/portfolio-ilyass/"
 
-      - name: Move built files to root
+      - name: Ensure `index.html` exists
         run: |
-          mv dist/portfolio-v2/browser/* .
-          rm -rf dist/portfolio-v2
+          if [ ! -f dist/portfolio-ilyass/index.html ]; then
+            echo "Error: index.html not found!"
+            exit 1
+          fi
+
+      - name: Copy `index.html` to `404.html`
+        run: cp dist/portfolio-ilyass/index.html dist/portfolio-ilyass/404.html
+
+      - name: Create `.nojekyll` file
+        run: echo > dist/portfolio-ilyass/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./
+          publish_dir: ./dist/portfolio-ilyass
