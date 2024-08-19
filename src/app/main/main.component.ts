@@ -8,6 +8,7 @@ import {IntroComponent} from "../intro/intro.component";
 import {NavbarComponent} from "../navbar/navbar.component";
 import {PortfolioComponent} from "../portfolio/portfolio.component";
 import {CollaboratorsComponent} from "../collaborators/collaborators.component";
+import {SkillsComponent} from "../skills/skills.component";
 
 @Component({
   selector: 'app-main',
@@ -21,7 +22,8 @@ import {CollaboratorsComponent} from "../collaborators/collaborators.component";
     IntroComponent,
     NavbarComponent,
     PortfolioComponent,
-    CollaboratorsComponent
+    CollaboratorsComponent,
+    SkillsComponent
   ],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
