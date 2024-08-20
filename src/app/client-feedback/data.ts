@@ -81,14 +81,6 @@ export const testimonials: any = [
     expanded: false
   },
   {
-    stars: 1,
-    text: "What? He didn't give me anything.",
-    client: "igrevkr",
-    company: "South Korea",
-    image: "assets/feedbacks/user.png",
-    expanded: false
-  },
-  {
     stars: 5,
     text: "Great job, very nice.",
     client: "niki014",
