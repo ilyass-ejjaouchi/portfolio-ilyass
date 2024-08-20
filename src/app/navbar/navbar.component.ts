@@ -31,7 +31,7 @@ export class NavbarComponent {
 
   @HostListener('window:scroll', [])
   onWindowScroll() {
-    const sections = ['intro', 'portfolio', 'about-me', 'client-feedback', 'collaborators'];
+    const sections = ['intro', 'portfolio', 'about-me', 'client-feedback', 'collaborators','contact-form'];
     let current = sections[0];
     for (const section of sections) {
       const element = document.getElementById(section);

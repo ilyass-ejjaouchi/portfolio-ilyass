@@ -85,3 +85,8 @@ textarea.form-control-sm {
     font-size: 14px;
   }
 }
+.form-control-sm,
+.form-select-sm,
+.form-check-input {
+  border-color: #4e2edb !important;
+}
