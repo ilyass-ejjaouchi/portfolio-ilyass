@@ -10,10 +10,6 @@
   z-index: 1000;
 }
 
-body {
-  padding-top: 500px; /* Adjust this value based on the total height of your navbar */
-}
-
 .logo img {
   max-height: 50px;
 }

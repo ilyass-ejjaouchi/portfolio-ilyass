@@ -75,9 +75,21 @@ export class ExperienceDetailsComponent implements OnInit {
           'Implementation of a strong and secure authentication system using JWT and Spring Security.',
           'Utilized Spring Boot, Angular, and Ionic for effective development, with successful cloud deployment via Heroku.'
         ];
-        this.projectImage = 'assets/abc_construction.png';  // Set the image path
+        this.projectImage = 'assets/abc_construction.png';
+      }else  if (projectId === 'aionic') {
+        this.projectTitle = 'Aionic Building Management System';
+        this.company = 'Freelance Project';
+        this.location = 'Remote';
+        this.duration = '01/2024 - 08/2024';
+        this.projectDetails = [
+          'Developed a comprehensive building management system using Next.js for the backend and Angular for the frontend, facilitating efficient management of buildings, users, activities, and services.',
+          'Implemented a robust room reservation system with approval workflows, ensuring seamless booking and management of meeting rooms.',
+          'Integrated service management for catering and facilities, enabling a complete solution for managing room setups and additional services.',
+          'Designed a user management system to handle multiple roles, including admins and regular users, with secure authentication.',
+          'Optimized the system for scalability, ensuring it can handle growing user bases and multiple buildings efficiently.'
+        ];
+        this.projectImage = 'assets/aionic.png';
       }
-      // Add more cases for other projects as needed
     });
   }
 
