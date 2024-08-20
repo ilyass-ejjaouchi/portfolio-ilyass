@@ -125,7 +125,7 @@ export const testimonials: any = [
     text: "He is a professional developer, that knows the backend and the frontend both. This guy is a go-to guy for your REACT, NEXTJS app.",
     client: "muhammadumai883",
     company: "United Arab Emirates",
-    image: "assets/feedbacks/muhammadumai883.png",
+    image: "assets/feedbacks/muhammadumai883.jpg",
     expanded: false
   },
   {
