@@ -2,115 +2,14 @@
   <h2 class="display-6">Skills</h2>
   <p>The skills, tools, and technologies I am really good at:</p>
   <div class="skills-grid">
-    <!-- SGBD -->
-    <div class="skill-item">
-      <img src="assets/skills/mysql.png" alt="MySQL">
+    <div *ngFor="let category of skillCategories" class="skill-category">
+      <h3>{{ category.name }}</h3>
+      <div class="skills-list">
+        <div *ngFor="let skill of category.skills" class="skill-item">
+          <img [src]="skill.image" [alt]="skill.name" class="skill-icon">
+          <p>{{ skill.name }}</p>
+        </div>
+      </div>
     </div>
-    <div class="skill-item">
-      <img src="assets/skills/oracle.png" alt="Oracle">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/postgresql.png" alt="PostgreSQL">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/sqlServer.png" alt="SQL Server">
-    </div>
-
-    <!-- Programming Languages -->
-    <div class="skill-item">
-      <img src="assets/skills/java.png" alt="Java">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/plsql.png" alt="PL/SQL">
-    </div>
-
-    <!-- Continuous Integration -->
-    <div class="skill-item">
-      <img src="assets/skills/git.png" alt="Git">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/github.png" alt="GitHub">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/maven.png" alt="Maven">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/jenkins.png" alt="Jenkins">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/docker.png" alt="Docker">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/Kubernetes.png" alt="Kubernetes">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/Sonar.png" alt="Sonar">
-    </div>
-
-    <!-- Web Development -->
-    <div class="skill-item">
-      <img src="assets/skills/spring.png" alt="Spring Boot">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/spring-security.png" alt="Spring Security">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/spring-cloud.png" alt="Spring Cloud">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/spring-batch.png" alt="Spring Batch">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/mvc.png" alt="MVC">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/juinit.png" alt="JUnit">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/mockito.png" alt="Mockito">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/rest.png" alt="API Rest">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/Hibernate.png" alt="Hibernate">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/Liquibase.png" alt="Liquibase">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/Log4j.png" alt="Log4j">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/angular-logo.png" alt="Angular">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/JQuery.png" alt="JQuery">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/React.png" alt="React">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/Redux.png" alt="Redux">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/JavaScript.png" alt="JavaScript">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/ts.png" alt="ts">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/html.png" alt="HTML5">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/css.png" alt="CSS3">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/Bootstrap.png" alt="Bootstrap">
-    </div>
-    <div class="skill-item">
-      <img src="assets/skills/SQUASH.png" alt="SQUASH TM">
-    </div>
-
   </div>
 </div>

@@ -50,3 +50,33 @@
   padding-top: 6rem !important;
 }
 
+.list-inline-item img {
+  max-height: 100px !important; /* Increase the size of the technology images */
+}
+
+/* New Styles for Project Highlights */
+.project-highlights {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.project-highlights .card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.project-highlights .card:hover {
+  transform: translateY(-5px);
+}
+
+.project-highlights .card-body {
+  display: flex;
+  align-items: center;
+}
+
+.project-highlights .card-body i {
+  font-size: 24px;
+  color: #1C1E53;
+  margin-right: 10px;
+}
