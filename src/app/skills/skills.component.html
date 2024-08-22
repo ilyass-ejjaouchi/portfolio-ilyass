@@ -2,7 +2,7 @@
   <h2 class="display-6">Skills</h2>
   <p>The skills, tools, and technologies I am really good at:</p>
   <div class="skills-grid">
-    <div *ngFor="let category of skillCategories" class="skill-category">
+    <div *ngFor="let category of skillCategories" [ngClass]="category.customClass" class="skill-category">
       <h3>{{ category.name }}</h3>
       <div class="skills-list">
         <div *ngFor="let skill of category.skills" class="skill-item">

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
-import { NgForOf } from "@angular/common";
+import {NgClass, NgForOf} from "@angular/common";
 
 @Component({
   selector: 'app-skills',
   standalone: true,
   imports: [
-    NgForOf
+    NgForOf,
+    NgClass
   ],
   templateUrl: './skills.component.html',
   styleUrls: ['./skills.component.css']
@@ -44,15 +45,24 @@ export class SkillsComponent {
       name: 'Web Development',
       skills: [
         { name: 'Spring Boot', image: 'assets/skills/spring-boot.png' },
+        { name: 'Spring Batch', image: 'assets/skills/spring-batch.png' },
+        { name: 'Spring Cloud', image: 'assets/skills/spring-cloud.png' },
+        { name: 'Spring Security', image: 'assets/skills/spring-security.png' },
         { name: 'Hibernate', image: 'assets/skills/hibernate.png' },
+        { name: 'Liquibase', image: 'assets/skills/Liquibase.png' },
+        { name: 'Log4j', image: 'assets/skills/Log4j.png' },
         { name: 'Angular', image: 'assets/skills/angular.png' },
         { name: 'React', image: 'assets/skills/react.png' },
         { name: 'Redux', image: 'assets/skills/redux.png' },
         { name: 'JavaScript', image: 'assets/skills/javascript.png' },
+        { name: 'JUnit', image: 'assets/skills/JUnit.png' },
+        { name: 'Mockito', image: 'assets/skills/mockito.png' },
         { name: 'HTML5', image: 'assets/skills/html.png' },
         { name: 'CSS3', image: 'assets/skills/css.png' },
+        { name: 'JQuery', image: 'assets/skills/JQuery.png' },
         { name: 'Bootstrap', image: 'assets/skills/bootstrap.png' }
-      ]
+      ],
+      customClass: 'wide-card'
     },
     {
       name: 'Languages',
@@ -73,3 +83,4 @@ export class SkillsComponent {
     }
   ];
 }
+

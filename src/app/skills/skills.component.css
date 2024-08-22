@@ -1,5 +1,4 @@
 .skills-container {
-  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -46,4 +45,19 @@
   font-size: 14px;
   font-weight: 500;
   color: #333;
+}
+.wide-card {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
+  .skills-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+  }
+
+  .skill-category {
+    flex: 0 0 auto;
+    width: 80%;
+  }
 }
