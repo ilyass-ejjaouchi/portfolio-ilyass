@@ -40,34 +40,3 @@
     padding-right: 30px;
   }
 }
-
-@media (max-width: 768px) {
-  .skills-grid {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-  }
-
-  .skill-category {
-    flex: 0 0 auto;
-    width: 80%;
-  }
-}
-
-@media (max-width: 768px) {
-  .container-fluid {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .row {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-  }
-
-  .col-lg-3, .col-md-6 {
-    flex: 0 0 auto;
-    width: 80%;
-  }
-}
