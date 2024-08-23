@@ -55,7 +55,7 @@ export class ExperienceDetailsComponent implements OnInit {
             'Designed and optimized Talend jobs and PL/SQL scripts for effective data administration.',
             'Developed technical solutions using Spring Boot, Angular, and Bootstrap, ensuring robust application performance.'
           ],
-          ['Spring Boot', 'Angular', 'GitLab', 'Talend', 'Oracle', 'PL/SQL', 'Bootstrap'],
+          ['Spring Boot', 'Angular', 'GitLab', 'Talend', 'Oracle', 'plsql', 'Bootstrap'],
           'assets/edf.png'
         );
       } else if (projectId === 'adria') {
@@ -69,7 +69,7 @@ export class ExperienceDetailsComponent implements OnInit {
             'Designed an application integrating Spring Boot, React JS, and other tools to optimize the management of international transfers.',
             'Developed a secure backend module to reinforce the confidentiality and integrity of business data.'
           ],
-          ['Spring Boot', 'React JS', 'Security Practices', 'Backend Development'],
+          ['Spring Boot','Spring security','Spring cloud', 'React','redux', 'java'],
           'assets/abs.png'
         );
       }else if (projectId === 'aionic') {
@@ -86,7 +86,7 @@ export class ExperienceDetailsComponent implements OnInit {
             'Designed a user management system to handle multiple roles, including admins and regular users, with secure authentication.',
             'Optimized the system for scalability, ensuring it can handle growing user bases and multiple buildings efficiently.'
           ],
-          ['Next.js', 'Angular', 'Room Reservation System', 'User Management', 'Service Management'],
+          ['Next', 'Angular', 'Room Reservation System', 'User Management', 'Service Management'],
           'assets/aionic.png'
         );
       }

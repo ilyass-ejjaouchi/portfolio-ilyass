@@ -39,6 +39,7 @@
 
 .portfolio-item:hover {
   transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .portfolio-item img {
