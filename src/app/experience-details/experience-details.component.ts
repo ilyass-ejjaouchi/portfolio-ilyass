@@ -40,7 +40,7 @@ export class ExperienceDetailsComponent implements OnInit {
             'Facilitated effective collaboration between backend and frontend teams, ensuring alignment with project objectives.',
             'Provided technical mentoring and crafted comprehensive documentation, enriching the team’s development capabilities.'
           ],
-          ['Java', 'Spring Boot', 'Spring Cloud', 'PostgreSQL', 'Jenkins', 'SONAR'],
+          ['Java', 'Spring Boot', 'Spring Cloud','angular', 'PostgreSQL', 'Jenkins', 'SONAR', 'docker'],
           'assets/sncf.png'
         );
       } else if (projectId === 'edf') {
@@ -55,7 +55,8 @@ export class ExperienceDetailsComponent implements OnInit {
             'Designed and optimized Talend jobs and PL/SQL scripts for effective data administration.',
             'Developed technical solutions using Spring Boot, Angular, and Bootstrap, ensuring robust application performance.'
           ],
-          ['Spring Boot', 'Angular', 'GitLab', 'Talend', 'Oracle', 'plsql', 'Bootstrap'],
+          ['Spring Boot', 'Angular', 'GitLab', 'Talend', 'Oracle', 'plsql',
+            'postgresql', 'Bootstrap', 'rest', 'docker', 'jenkins', 'sonar'],
           'assets/edf.png'
         );
       } else if (projectId === 'adria') {
@@ -69,7 +70,7 @@ export class ExperienceDetailsComponent implements OnInit {
             'Designed an application integrating Spring Boot, React JS, and other tools to optimize the management of international transfers.',
             'Developed a secure backend module to reinforce the confidentiality and integrity of business data.'
           ],
-          ['Spring Boot','Spring security','Spring cloud', 'React','redux', 'java'],
+          ['Spring Boot','Spring security','Spring cloud', 'React','redux', 'java', 'rest'],
           'assets/abs.png'
         );
       }else if (projectId === 'aionic') {
@@ -86,7 +87,7 @@ export class ExperienceDetailsComponent implements OnInit {
             'Designed a user management system to handle multiple roles, including admins and regular users, with secure authentication.',
             'Optimized the system for scalability, ensuring it can handle growing user bases and multiple buildings efficiently.'
           ],
-          ['Next', 'Angular', 'Room Reservation System', 'User Management', 'Service Management'],
+          ['Next', 'Angular', 'Mysql', 'bootstrap', 'semantic-ui', 'rest'],
           'assets/aionic.png'
         );
       }
